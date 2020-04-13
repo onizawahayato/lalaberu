@@ -28,6 +28,7 @@ class NewsController extends Controller
       }
 
       unset($form['_token']);
+
       unset($form['image']);
 
       $news->fill($form);

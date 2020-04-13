@@ -13,7 +13,17 @@ class ProfileController extends Controller
   }
   public function create()
   {
-    return redirect('admin/profile/create');
+    $this->validate($request, profile::$rules);
+
+      $profile = new profile;
+      $form = $request->all();
+
+      unset($form['_token']);
+
+      $profile->fill($form);
+      $profile->save();
+
+      return redirect('admin/profile/create');
   }
 
   public function edit()
