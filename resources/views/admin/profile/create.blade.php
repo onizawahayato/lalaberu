@@ -32,13 +32,13 @@
                     <div class="form-group row">
                         <label class="col-md-2">趣味</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control-file" name="hobby" value="{{ old('hobby') }}">>
+                            <input type="text" class="form-control-file" name="hobby" value="{{ old('hobby') }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">自己紹介</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control-file" name="introduction" value="{{ old('introduction') }}">>
+                            <input type="text" class="form-control-file" name="introduction" value="{{ old('introduction') }}">
                         </div>
                     </div>
                     {{ csrf_field() }}
